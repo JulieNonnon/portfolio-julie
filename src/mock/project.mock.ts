@@ -63,4 +63,13 @@ export const projects: Project[] = [
         projectlink: "https://julienonnon.github.io/postal-card-collection/",
         githublink: "https://github.com/JulieNonnon/postal-card-collection",
     },
+    {
+        id: 7,
+        image: require("@/assets/images/blender-donuts.png"),
+        title: "Donuts Blender",
+        techno: "Blender / Three.js",
+        description: "Projet Personnel : Découverte de Blender pour à l'avenir créer mes propres models 3D utilisables dans des applications Three.js",
+        projectlink: "https://julienonnon.github.io/donuts-blender/",
+        githublink: "https://github.com/JulieNonnon/donuts-blender",
+    },
 ]

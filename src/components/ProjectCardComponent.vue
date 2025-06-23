@@ -4,19 +4,19 @@
     <img :src="item.image" :alt="item.title" />
     <h2>{{ item.title }}</h2>
     <p>{{ item.techno }}</p>
+    <div class="btn-area">
+      <a :href="item.projectlink" target="_blank" rel="noopener noreferrer">
+        <button class="link-button" title="Voir l'application">
+          <AppWindow class="icon" alt="Voir l'application" />
+        </button>
+      </a>
+      <a :href="item.githublink" target="_blank" rel="noopener noreferrer">
+        <button class="github-button" title="Consulter le GitHub">
+          <Github class="icon" alt="Consulter le GitHub" />
+        </button>
+      </a>
+    </div>
     <p class="descriptionP">{{ item.description }}</p>
-    <a :href="item.projectlink" target="_blank" rel="noopener noreferrer">
-      <button class="link-button">
-        <AppWindow class="icon" />
-        Voir l'application
-      </button>
-    </a>
-    <a :href="item.githublink" target="_blank" rel="noopener noreferrer">
-      <button class="github-button">
-        <Github class="icon" />
-        Consulter le GitHub
-      </button>
-    </a>
   </div>
 </template>
 
@@ -58,20 +58,31 @@ h2, p {
 }
 .descriptionP {
   text-align: justify;
+  margin-bottom: 10%;
 }
 img {
   border-radius: 5px 5px 0 0;
   max-width: 100%;
-  height: auto;
+  min-height: 200px;
+  object-fit: cover;
+}
+.btn-area{
+  display: flex;
+  justify-content: center;
 }
 .link-button, .github-button {
-  margin: 1rem;
-  padding: 0.5rem 1rem;
-  background-color: #2d89ef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  margin: 0.5rem;
+  padding: 0.3rem;
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 50px;
   cursor: pointer;
+  
 }
 .link-button {
   background-color: #2d89ef;
