@@ -63,7 +63,7 @@ h2, p {
 img {
   border-radius: 5px 5px 0 0;
   max-width: 100%;
-  min-height: 200px;
+  max-height: 300px;
   object-fit: cover;
 }
 .btn-area{
