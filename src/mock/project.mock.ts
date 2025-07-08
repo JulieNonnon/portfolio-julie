@@ -72,4 +72,13 @@ export const projects: Project[] = [
         projectlink: "https://julienonnon.github.io/donuts-blender/",
         githublink: "https://github.com/JulieNonnon/donuts-blender",
     },
+    {
+        id: 8,
+        image: require("@/assets/images/react-meteoapi.png"),
+        title: "Application Météo",
+        techno: "React / Open Meteo",
+        description: "Projet Personnel React : application météo appelant les données de l'API Open Meteo, selon la ville recherchée en barre de recherche.",
+        projectlink: "https://julienonnon.github.io/react-meteo-api/",
+        githublink: "https://github.com/JulieNonnon/react-meteo-api",
+    },
 ]
